@@ -22,9 +22,12 @@ public class main {
             System.out.println("Указано слишком малое количество топлива");
             amount = 0;
         }
+
         if (amount > maxAmount) {
             System.out.println("Указанное количество топлива превышает максимально допустимое");
-            return;
+            amount = 400;
+            System.out.println("Топливо уменьшено до приемлемого! И равно " + amount + " л.");
+
         }
 
         System.out.println("Цена выбрнного топлива: " + fuelPrice + " руб.");
